@@ -1,0 +1,36 @@
+ <!-- google homepage  -->
+
+ <!DOCTYPE html>  
+<html lang="fa">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Google</title>  
+    <link rel="stylesheet" href="styles.css">  
+</head>  
+<body>  
+    <div class="container">  
+        <header>  
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png" alt="Google Logo" class="logo">  
+        </header>  
+        
+        <main>  
+            <input type="text" class="search-box" placeholder="">  
+            <div class="buttons">  
+                <input type="submit" value="Google Search" class="search-button">  
+                <input type="submit" value="I'm Feeling Lucky!" class="feeling-lucky-button">  
+            </div>  
+        </main>  
+
+        <footer>  
+            <p>تاریخ امروز: <span id="current-date"></span></p>  
+        </footer>  
+    </div>  
+    
+    <script>  
+        // نمایش تاریخ امروز  
+        const currentDate = new Date().toLocaleDateString('fa-IR');  
+        document.getElementById('current-date').innerText = currentDate;  
+    </script>  
+</body>  
+</html>
